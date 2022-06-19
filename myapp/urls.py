@@ -3,6 +3,6 @@ from myapp import views
 
 urlpatterns = [
     path('', views.index),
-    path('create/', views.index),
-    path('read/1/', views.index)
+    path('create/', views.create),
+    path('read/<id>/', views.read) # id 값을 인자로 받을수 있음
 ]
